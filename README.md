@@ -7,3 +7,12 @@ Original script provide by
 
 Our customized script replace URL and split file.
 
+Configuration
+------------------------
+
+### Shell variable
+
+- URL: Elasticsearch base url
+- LIMIT: Number of snapshots to keep
+- REPO: Repository name
+
