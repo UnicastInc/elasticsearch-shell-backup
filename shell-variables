@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Elasticsearch endpoint URL
+URL=http://localhost:9200
+# Elasticsearch snapshot repository name
+REPO=es_backup
+# Number of snapshots to keep
+LIMIT=30
+# For test
+#LIMIT=3
+# Snapshot naming convention
+SNAPSHOT=`date +%Y%m%d-%H%M%S`
+

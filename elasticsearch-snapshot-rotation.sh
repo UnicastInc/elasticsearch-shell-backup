@@ -8,16 +8,8 @@
 # - apt-get install jq
 # - or download from http://stedolan.github.io/jq/
 
-# The amount of snapshots we want to keep.
-LIMIT=30
-# For test
-#LIMIT=3
-
-# Name of our snapshot repository
-REPO=es_backup
-
-# URL
-URL=http://localhost:9200
+base_dir="$(dirname "$0")"
+source $base_dir/shell-variables
 
 # Get a list of snapshots that we want to delete
 echo "curl -s -XGET \"$URL/_snapshot/$REPO/_all\" | jq -r \".snapshots[:-${LIMIT}][].snapshot\""

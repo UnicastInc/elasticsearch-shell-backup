@@ -1,5 +1,8 @@
 #!/bin/bash
 
-/etc/bacula/pre-backup.d/elasticsearch-take-snapshot.sh
-/etc/bacula/pre-backup.d/elasticsearch-snapshot-rotation.sh
+base_dir="$(dirname "$0")"
+source $base_dir/shell-variables
+
+$base_dir/elasticsearch-take-snapshot.sh
+$base_dir/elasticsearch-snapshot-rotation.sh
 
