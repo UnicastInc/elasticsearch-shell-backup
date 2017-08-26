@@ -26,7 +26,7 @@ edit `shell-variables`
 Requirements
 ------------------------
 
-1. Elasticsearch 1.4, 5 maybe
+1. Elasticsearch 1.4, 2, 5 maybe
 1. curl
 1. jq JSON Parser command
 
@@ -46,7 +46,7 @@ Schedule regular intervals
 
 ### cron
 
-Most easist way to backup.
+Most easiest way to backup.
 
 #### crontab
 
@@ -58,7 +58,7 @@ or drop into `/etc/cron.{daily,weekly,monthly}` ...
 
 ### Bacula
 
-Specify `bacula-dir.conf`.
+Specify in `bacula-dir.conf`.
 
 ```
 Job {
