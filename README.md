@@ -100,6 +100,14 @@ elasticsearch-take-snapshot.sh
 elasticsearch-snapshot-rotation.sh
 ```
 
+Hardening Security
+------------------------------------------
+
+```bash
+chmod 700 /etc/bacula/pre-backup.d
+chmod 600 shell-variables
+```
+
 Tool commands
 ------------------------
 
