@@ -33,6 +33,12 @@ Requirements
 Usage
 -----------------
 
+clone scripts your preferred directory. In this case we assume cloned `/etc/bacula/pre-backup.d`.
+
+```
+git clone https://github.com/UnicastInc/elasticsearch-shell-backup.git /etc/bacula/pre-backup.d
+```
+
 call simply.
 
 ```
@@ -66,9 +72,18 @@ Job {
 }
 ```
 
+Bacula File Daemon side, create `/etc/bacula/pre-backup.d/elasticsearch-backup-jobs.sh`
+
+```bash
+#!/bin/bash
+
+# Elasticsearch snapshot lifecycle
+/etc/bacula/pre-backup.d/elasticsearch-backup-jobs.sh
+```
+
 ### Another
 
-- Jenkins, or another CIs.
+- Jenkins, GitLab CI or another CIs.
 
 For Test
 ---------------
